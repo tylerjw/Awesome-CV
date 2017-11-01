@@ -17,13 +17,42 @@
     {Jun. 2014 - PRESENT} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed library for demodulating and decoding narrow band trunked mobile radio protocols}
-        \item {Wrote Viterbi implementation in C}
-        \item {Implemented Software Defined Radio hardware interface (Various USRPs and Epiq Sidekiq)}
-        \item {Prototyping in Matlab and Python}
-        \item {Development on large scale C/C++ projects for LINUX and OSX using makefile build system}
-        \item {Profiled and optimized algorithms using Intel Integrated Performance Primitives (IPP) library}
-        \item {Worked on physical layer implementation of 802.11b}
+        \item {Wireless network pattern of life analysis library}
+        \begin{itemize}
+          \item {Detection of mis-configured cells}
+          \item {Alerts for base-stations with odd behavior on network}
+        \end{itemize}
+        \item {P25 scanner library}
+        \begin{itemize}
+          \item {Prototyped in python, Implemented in C++}
+          \item {FFT narrow band energy window detect for fast scanning}
+          \item {FSW search used for timing and frequency offset correction}
+          \item {Viterbi, Reed-Solomon, BCH, and CRC Decoding}
+          \item {Framing and Message Parsing for all Broadcast messages}
+        \end{itemize}
+        \item {Radio interface libraries for scanner application}
+        \begin{itemize}
+          \item {Epiq Sidekiq with Placekiq GPS}
+          \item {Ettus USRP N210 and B210 with support for hotplugging}
+        \end{itemize}
+        \item {MPT1327 scanner library}
+        \begin{itemize}
+          \item {Prototyped in matlab, Implemented in C++}
+          \item {Goertzel based fast reject for fast scanning}
+          \item {IPP Parallelized FM demodulator}
+          \item {Feedback timing recovery algorithm for MSK}
+          \item {CRC checker and Bit/Message parsing}
+        \end{itemize}
+        \item {Ported matlab library for unknown signal analysis into C++}
+        \begin{itemize}
+          \item {Arbitrary PSK and FSK input signals}
+          \item {Implemented complicated algorithms in C++ based off matlab code written by PhD}
+        \end{itemize}
+        \item {Hacked on physical layer implementation of 802.11b with SDR}
+        \begin{itemize}
+          \item {Prototype C++ code using USRP to test RTS/CTS ranging technique}
+          \item {Debugging using Wireshark to observe call and response}
+        \end{itemize}
       \end{cvitems}
     }
 
@@ -42,7 +71,7 @@
 
 %---------------------------------------------------------
   \cventry
-    {Satellite Communications Systems Operator/Maintainer} % Job title
+    {Satellite Communications Systems Operator/Maintainer (25S)} % Job title
     {Colorado Army National Guard} % Organization
     {5/19th SFGA} % Location
     {Oct. 2008 - Oct. 2016} % Date(s)
