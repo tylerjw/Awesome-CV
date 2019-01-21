@@ -11,17 +11,32 @@
 
 %---------------------------------------------------------
   \cventry
-    {Software Engineer II} % Job title
+    {Software Engineer III} % Job title
     {LGS Innovations} % Organization
     {Westminster, CO} % Location
     {Jun. 2014 - PRESENT} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Wireless network pattern of life analysis library}
+        \item {Optimized C++ polyphase resampler and fir filter to run on ARM with NEON instructions}
         \begin{itemize}
-          \item {Detection of mis-configured cells}
-          \item {Alerts for base-stations with odd behavior on network}
+          \item {Filter design using same method as fir2 using fftw}
+          \item {Generic resampling implementation for arbitrary upsample and downsample rates}
+          \item {Used compiler optimizer output and knowledge of architecture to structure data and loop to take advantage of vectorization}
+          \item {Resulting fir filter and resampler used less instructions than intel IPP implementation and ran only 8x slower on A53 than on an i7 using intel optimized vector routines}
+          \item {Optimizing for vectorization resulted in 10x speed up over simple for loops}
         \end{itemize}
+        \item {Interface library for new SDR using protobuf messaging and VRT over ethernet}
+        \begin{itemize}
+          \item {Protobuf messaging with thread for asynchronous status updating}
+          \item {VRT over UDP for receiving sample data over a 10Ge link}
+        \end{itemize}
+        \item {Adversarial Research using physical layer implementation of 802.11b with SDR}
+        \begin{itemize}
+          \item {Prototype C++ code using USRP to test RTS/CTS ranging technique}
+          \item {Developed unique method to improve ranging measurements based on observed behavior of AP messaging}
+          \item {Debugging using Wireshark to observe call and response}
+        \end{itemize}
+        \item {Created library for detecing oddly configured cellular basestations}
         \item {P25 scanner library}
         \begin{itemize}
           \item {Prototyped in python, Implemented in C++}
@@ -45,13 +60,8 @@
         \end{itemize}
         \item {Ported matlab library for unknown signal analysis into C++}
         \begin{itemize}
-          \item {Arbitrary PSK and FSK input signals}
-          \item {Implemented complicated algorithms in C++ based off matlab code written by PhD}
-        \end{itemize}
-        \item {Hacked on physical layer implementation of 802.11b with SDR}
-        \begin{itemize}
-          \item {Prototype C++ code using USRP to test RTS/CTS ranging technique}
-          \item {Debugging using Wireshark to observe call and response}
+          \item {Arbitrary PSK and FSK input signal characterization}
+          \item {Implemented algorithms in C++ based off matlab code written by PhD}
         \end{itemize}
       \end{cvitems}
     }
@@ -61,7 +71,7 @@
     {Software Engineer} % Job title
     {TecStar Consulting} % Organization
     {Broomfield, CO} % Location
-    {Mar. 2014 - Jun. 2016} % Date(s)
+    {Mar. 2014 - Jun. 2014} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Selenium automation testing of websites with Python and Java}
